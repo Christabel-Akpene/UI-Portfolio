@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-container{
+    font-family: "Nunito", sans-serif;
+
+}
+
+.home-page{
+    min-height: 100dvh;
+    min-width: 100vw;
+    background: linear-gradient(45deg, rgba(10,60,68,0.3), rgba(10, 60, 68, 0.5)), url(images/keyboard3.jpg) repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(28, 121, 65);
+}
+
+.header{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    color: white;
+
+
+}
+
+.header .logo{
+    margin-left: 90px;
+    font-size: clamp(1.8rem, 2.5vw, 2rem);
+    font-weight: 500;
+}
+
+nav{
+    margin-right: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 20px;  
+    transition: 0.3s ease-in-out; 
+}
+
+nav ul li:hover{
+    color: #d1d8e0;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li.hire{
+    background-color:#00B894;
+    border-radius: 50px;
+    padding: 8px 15px;
+
+}
+i{
+    cursor: pointer;
+}
+
+i:nth-last-child(2){
+    padding: 0 10px;
+}
+
+.home-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 39px 200px;
+    color: white;
+
+}
+
+.home-body .text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+
+.text p:first-child{
+    font-size: clamp(1.7rem, 2.5vw, 2rem);
+    font-weight: 800;
+}
+
+
+.text .title{
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(1.7rem, 2.5vw, 2rem);
+
+}
+
+
+.buttons .hire{
+    background-color:#00B894;
+    border-radius: 50px;
+    padding: 8px 15px;
+    border: none;
+    color: white;
+
+}
+
+.buttons .portfolio{
+    background-color:#5e6061;
+    border-radius: 50px;
+    padding: 8px 15px;
+    border: none;
+    color: white;
+}
+
+/* Biography Section */
+
+.bio{
+    min-height: 100dvh;
+    min-width: 70vw;
+    width: 70%;
+    display: flex;
+    margin: auto;
+    gap: 80px;
+    padding-top: min(5rem, 8vh);
+}
+
+.bio .image{
+    background-color: #aeb0b1;
+    height: 90%;
+}
+
+
+
+.bio .biography{
+    margin: min(9rem, 9vh) 0px;
+    width: 50%;
+}
+
+.biography p:first-child{
+    color: #aeb0b1;
+    font-size: clamp(1.2rem, 2.5vw, 1.4rem );
+    margin: min(2vh, 3rem) 0;
+
+}
+
+.biography h3{
+    font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+    margin: min(2vh, 3rem) 0;
+
+}
+.biography .description{
+    margin: min(2vh, 3rem) 0;
+
+}
+
+
+.bio .details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+    row-gap: 20px;
+
+}
+
+.biography .details p:first-child{
+    font-size: inherit;
+    color: inherit;
+    margin: inherit;
+}
+
+.biography .socials{
+    margin: min(4vh, 5rem) 0;
+
+}
+
+
+.biography .socials i:first-of-type{
+    margin-left: 20px;
+}
+
+.biography .socials i{
+    padding: 0 10px;
+    color: #07bc98;
+    cursor: pointer;
+}
+
+.biography .buttons{
+    margin: min(2vh, 3rem) 0;
+    display: flex;
+    gap: 30px;
+}
+
+.buttons .cv{
+    background-color: #0eab8c;
+    border-radius: 50px;
+    padding: 8px 15px;
+    border: none;
+    color: white;
+}
+
+.biography .buttons .hire{
+    background-color: #046350;
+
+}
+
+/* About Section */
+
+.about{
+    min-height: 100dvh;
+    min-width: 100vw;
+    background-color: #dee1e2;
+    padding: min(8vw, 7rem);
+}
+
+.about h2{
+    text-align: center;
+    padding-bottom: min(5vw, 4rem);
+
+
+}
+
+.about .about-paragraph{
+    display: flex;
+    gap: 30px;
+}
+
+.about-paragraph .about-text{
+    background-color: white;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    
+}
+
+.about-paragraph .about-text p:first-child{
+    color: #046350;
+    font-size: 1.4rem;
+}
+
+.about-paragraph .about-text p:nth-child(2){
+    font-size: 1.3rem;
+}
+
+
+.about .services{
+    margin-top: min(6vw, 5rem);
+    color: #046350;
+    font-weight: bold;
+}
+
+.about .services a{
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* Skills Section */
+.skills{
+    padding: min(8vw, 7rem);
+    min-height: 100dvh;
+    min-width: 70vw;
+    width: 70%;
+    display: flex;
+    margin: auto;
+    gap: 80px;
+    
+}
+
+
+.skills .image{
+    width: 100%;
+    /* max-width: 500px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.skills .image img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+.skills .skills-text p:first-child{
+    color: #aeb0b1;
+    font-size: clamp(1.2rem, 2.5vw, 1.4rem );
+    margin: min(2vh, 3rem) 0;
+}
+
+
+.skills .skills-text h3{
+    font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+    margin: min(2vh, 3rem) 0;
+
+}
+.skills .skill-text .description{
+    margin: min(2vh, 3rem) 0;
+}
+
+
+.skills-bars .bar p{
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.skills-bars .progress-bar{
+    background-color: #046350;
+    width: 400px;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    background-color: #07bc98;
+}
+
+
+.ui{
+    animation: ui 1s forwards;
+}
+.ideas{
+    animation: ideas 1s forwards;
+}
+.branding{
+    animation: branding 1s forwards;
+}
+.web{
+    animation: web 1s forwards;
+}
+
+@keyframes ui {
+    100%{
+        width: 86%;
+    }
+}
+@keyframes ideas {
+    100%{
+        width: 92%;
+    }
+}
+@keyframes branding {
+    100%{
+        width: 83%;
+    }
+}
+@keyframes web {
+    100%{
+        width: 78%;
+    }
+}
