@@ -1,3 +1,10 @@
+
+let openSidebar = document.querySelector("#open");
+let closeSidebar = document.querySelector("#close");
+let navLinks = document.querySelector(".links");
+let link = document.querySelectorAll(".link");
+
+
 var typed = new Typed(".dev", {
     strings: ["Developer"],
     typeSpeed: 100,
@@ -23,10 +30,6 @@ valueDisplay.forEach((value) => {
 })
 
 
-let openSidebar = document.querySelector("#open");
-let closeSidebar = document.querySelector("#close");
-let navLinks = document.querySelector(".links");
-
 
 openSidebar.onclick = function(){
     navLinks.classList.add("show");
@@ -39,3 +42,8 @@ closeSidebar.onclick = function(){
 }
 
 
+link.forEach((anchorLink)=> {
+    anchorLink.addEventListener("click", function(){
+        navLinks.classList.remove("show");
+    })
+})
