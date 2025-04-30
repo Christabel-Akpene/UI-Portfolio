@@ -21,3 +21,21 @@ valueDisplay.forEach((value) => {
         }
     }, duration);
 })
+
+
+let openSidebar = document.querySelector("#open");
+let closeSidebar = document.querySelector("#close");
+let navLinks = document.querySelector(".links");
+
+
+openSidebar.onclick = function(){
+    navLinks.classList.add("show");
+    console.log("Show Please");
+}
+
+
+closeSidebar.onclick = function(){
+    navLinks.classList.remove("show");
+}
+
+

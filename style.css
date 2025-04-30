@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.parent-container{
+.parent-container {
     font-family: "Nunito", sans-serif;
-
+    overflow-x: hidden; 
 }
 
-.home-page{
+.home-page {
     min-height: 100dvh;
-    min-width: 100vw;
+    width: 100%;
     background: linear-gradient(45deg, rgba(10,60,68,0.3), rgba(10, 60, 68, 0.5)), url(images/keyboard3.jpg) repeat;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,218 +21,219 @@
     background-color: rgb(28, 121, 65);
 }
 
-.header{
-    padding: 20px 50px;
+/* Header Styles */
+.header {
+    padding: 20px 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: "Nunito", sans-serif;
     color: white;
-
-
+    position: relative;
 }
 
-.header .logo{
-    margin-left: 90px;
-    font-size: clamp(1.8rem, 2.5vw, 2rem);
+.header .logo {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 500;
 }
 
-nav{
-    margin-right: 200px;
+nav {
+    display: flex;
+    align-items: center;
 }
 
-nav ul li{
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
     display: inline-block;
     list-style-type: none;
-    padding: 0 20px;  
-    transition: 0.3s ease-in-out; 
+    padding: 0 15px;
+    transition: 0.3s ease-in-out;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     color: #d1d8e0;
 }
 
-
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: inherit;
 }
 
-nav ul li.hire{
-    background-color:#00B894;
+nav ul li.hire {
+    background-color: #00B894;
     border-radius: 50px;
     padding: 8px 15px;
-
 }
-i{
+
+i {
     cursor: pointer;
 }
 
-i:nth-last-child(2){
+i:nth-last-child(2) {
     padding: 0 10px;
 }
 
-.home-body{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 39px 200px;
-    color: white;
-
+.menu-bar {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.home-body .text{
+/* Home Body Styles */
+.home-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.home-body .text {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 50%;
 }
 
-.text p:first-child{
-    font-size: clamp(1.7rem, 2.5vw, 2rem);
+.text p:first-child {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 800;
 }
 
-
-.text .title{
+.text .title {
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(1.7rem, 2.5vw, 2rem);
-
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
-
-.buttons .hire{
-    background-color:#00B894;
+.buttons .hire {
+    background-color: #00B894;
     border-radius: 50px;
     padding: 8px 15px;
     border: none;
     color: white;
-
+    cursor: pointer;
 }
 
-.buttons .portfolio{
-    background-color:#5e6061;
+.buttons .portfolio {
+    background-color: #5e6061;
     border-radius: 50px;
     padding: 8px 15px;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 /* Biography Section */
-
-.bio{
+.bio {
     min-height: 100dvh;
-    min-width: 70vw;
-    width: 70%;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     margin: auto;
-    gap: 80px;
+    gap: 5%;
     padding-top: min(5rem, 8vh);
 }
 
-.bio .image{
+.bio .image {
     background-color: #aeb0b1;
     height: 90%;
+    width: 45%;
 }
 
-
-
-.bio .biography{
-    margin: min(9rem, 9vh) 0px;
+.bio .biography {
+    margin: min(5rem, 5vh) 0;
     width: 50%;
 }
 
-.biography p:first-child{
+.biography p:first-child {
     color: #aeb0b1;
-    font-size: clamp(1.2rem, 2.5vw, 1.4rem );
-    margin: min(2vh, 3rem) 0;
-
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    margin: min(2vh, 2rem) 0;
 }
 
-.biography h3{
-    font-size: clamp(1.6rem, 2.5vw, 1.8rem);
-    margin: min(2vh, 3rem) 0;
-
-}
-.biography .description{
-    margin: min(2vh, 3rem) 0;
-
+.biography h3 {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    margin: min(2vh, 2rem) 0;
 }
 
+.biography .description {
+    margin: min(2vh, 2rem) 0;
+}
 
-.bio .details{
+.bio .details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 30px;
     row-gap: 20px;
-
 }
 
-.biography .details p:first-child{
+.biography .details p:first-child {
     font-size: inherit;
     color: inherit;
     margin: inherit;
 }
 
-.biography .socials{
-    margin: min(4vh, 5rem) 0;
-
+.biography .socials {
+    margin: min(3vh, 3rem) 0;
 }
 
-
-.biography .socials i:first-of-type{
+.biography .socials i:first-of-type {
     margin-left: 20px;
 }
 
-.biography .socials i{
+.biography .socials i {
     padding: 0 10px;
     color: #07bc98;
     cursor: pointer;
 }
 
-.biography .buttons{
-    margin: min(2vh, 3rem) 0;
+.biography .buttons {
+    margin: min(2vh, 2rem) 0;
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.buttons .cv{
+.buttons .cv {
     background-color: #0eab8c;
     border-radius: 50px;
     padding: 8px 15px;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
-.biography .buttons .hire{
+.biography .buttons .hire {
     background-color: #046350;
-
 }
 
 /* About Section */
-
-.about{
+.about {
     min-height: 100dvh;
-    min-width: 100vw;
+    width: 100%;
     background-color: #dee1e2;
-    padding: min(8vw, 7rem);
+    padding: min(5vw, 5rem);
 }
 
-.about h2{
+.about h2 {
     text-align: center;
-    padding-bottom: min(5vw, 4rem);
-
-
+    padding-bottom: min(4vw, 3rem);
 }
 
-.about .about-paragraph{
+.about .about-paragraph {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.about-paragraph .about-text{
+.about-paragraph .about-text {
     background-color: white;
     min-height: 250px;
     display: flex;
@@ -242,52 +242,48 @@ i:nth-last-child(2){
     padding: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
-    
+    flex: 1;
+    min-width: 250px;
 }
 
-.about-paragraph .about-text p:first-child{
+.about-paragraph .about-text p:first-child {
     color: #046350;
     font-size: 1.4rem;
 }
 
-.about-paragraph .about-text p:nth-child(2){
+.about-paragraph .about-text p:nth-child(2) {
     font-size: 1.3rem;
 }
 
-
-.about .more-services{
-    margin-top: min(6vw, 5rem);
+.about .more-services {
+    margin-top: min(4vw, 3rem);
     color: #046350;
     font-weight: bold;
+    text-align: center;
 }
 
-.about .more-services a{
+.about .more-services a {
     text-decoration: none;
     color: inherit;
-    text-align: center;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     gap: 10px;
 }
 
 /* Skills Section */
-.skills{
-    padding: min(8vw, 7rem);
+.skills {
+    padding: min(5vw, 5rem);
     min-height: 100dvh;
-    min-width: 70vw;
-    width: 70%;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     margin: auto;
-    gap: 80px;
-    
+    gap: 5%;
 }
 
-
-.skills .image{
-    width: 100%;
-    /* max-width: 500px; */
+.skills .image {
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -295,238 +291,434 @@ i:nth-last-child(2){
     overflow: hidden;
 }
 
-.skills .image img{
+.skills .image img {
     border-radius: 10px;
     max-width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
-
 }
 
-.skills .skills-text p:first-child{
+.skills .skills-text p:first-child {
     color: #aeb0b1;
-    font-size: clamp(1.2rem, 2.5vw, 1.4rem );
-    margin: min(2vh, 3rem) 0;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    margin: min(2vh, 2rem) 0;
 }
 
-
-.skills .skills-text h3{
-    font-size: clamp(1.6rem, 2.5vw, 1.8rem);
-    margin: min(2vh, 3rem) 0;
-
-}
-.skills .skill-text .description{
-    margin: min(2vh, 3rem) 0;
+.skills .skills-text h3 {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    margin: min(2vh, 2rem) 0;
 }
 
+.skills .skill-text .description {
+    margin: min(2vh, 2rem) 0;
+}
 
-.skills-bars .bar p{
+.skills-bars .bar p {
     letter-spacing: 1px;
     margin-top: 30px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 15px;
 }
 
-.skills-bars .progress-bar{
+.skills-bars .progress-bar {
     background-color: #046350;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 5px;
     height: 10px;
 }
 
-.progress-bar div{
+.progress-bar div {
     height: 10px;
     border-radius: 5px;
     width: 0%;
     background-color: #07bc98;
 }
 
-
-.ui{
+.ui {
     animation: ui 1s forwards;
 }
-.ideas{
+
+.ideas {
     animation: ideas 1s forwards;
 }
-.branding{
+
+.branding {
     animation: branding 1s forwards;
 }
-.web{
+
+.web {
     animation: web 1s forwards;
 }
 
 @keyframes ui {
-    100%{
+    100% {
         width: 86%;
     }
 }
+
 @keyframes ideas {
-    100%{
+    100% {
         width: 92%;
     }
 }
+
 @keyframes branding {
-    100%{
+    100% {
         width: 83%;
     }
 }
+
 @keyframes web {
-    100%{
+    100% {
         width: 78%;
     }
 }
 
-
 /* Services */
-.services{
+.services {
     background-color: #dee1e2;
-
+    padding: min(4vw, 3rem) 0;
 }
 
-.services-body{
+.services-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    /* min-height: 100dvh; */
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
-    gap: 80px;
-
-    
+    gap: 5%;
+    flex-wrap: wrap;
 }
 
-.services-section{
+.services-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 30px;
+    flex: 1;
+    min-width: 300px;
 }
 
-
-.services-section i{
+.services-section i {
     color: #046350;
 }
 
-.services-section h3{
+.services-section h3 {
     margin-bottom: 10px;
 }
 
+.services-body .image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.services-body .image img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Statistics */
-
-.statistics{
-    margin: 30px;
+.statistics {
+    margin: 30px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 5%;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 0 5%;
 }
 
-.statistics-wrapper{
+.statistics-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 15px 0;
+    min-width: 150px;
 }
 
-
 /* Success Work */
-
-.success-wrapper{
-    padding: min(8vh, 7rem);
+.success-wrapper {
+    padding: min(5vh, 5rem);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: #dee1e2;
-
 }
 
-.success-wrapper h2{
+.success-wrapper h2 {
     color: #aeb0b1;
     padding-bottom: 20px;
 }
 
-.success .images{
+.success .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-
+    width: 90%;
+    max-width: 1200px;
 }
 
-.success .image{
-    max-width: 300px; 
-    overflow: hidden; 
-  
+.success .image {
+    max-width: 100%;
+    overflow: hidden;
 }
 
-.success .image img{
+.success .image img {
     border-radius: 10px;
     width: 100%;
     height: 200px;
     display: block;
     object-fit: cover;
-
 }
 
-.success .tech-stack{
+.success .tech-stack {
     background-color: #0eab8c;
-    height: 120px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    display: inline-block;
-    width: 100vw;
-    text-align: center;
-}
-
-
-
-.success .tech-stack i{
-    font-size: clamp(2rem, 2.5vw, 3rem);
-    text-align: center;
-    margin: auto;
-    color: white;
-    padding: 0px 40px;
-
-}
-
-.footer{
-    /* min-height: 25vh; */
-    background-color: red;
-    display: relative;
-}
-
-.footer .main-footer{
-    text-align: center;
-    padding-top: 30px;
-    background-color: #061E24 ;
-    padding: 30px;
-    
-}
-
-.footer .main-footer h2{
-    color: white;
-
-}
-.footer .main-footer span{
-    color: #dee1e2;
-    padding: 0 10px;
-}
-
-.footer .end{
+    padding: 30px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.success .tech-stack i {
+    font-size: clamp(1.8rem, 2.5vw, 3rem);
+    color: white;
+    padding: 15px 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #061E24;
+}
+
+.footer .main-footer {
+    text-align: center;
+    padding: 30px 5%;
+}
+
+.footer .main-footer h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer .main-footer span {
     color: #dee1e2;
-    display: relative;
-    bottom: 0;
+    padding: 0 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #dee1e2;
     background-color: #02191E;
-    padding: 20px;
+    padding: 20px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer .end .social-media i {
+    padding: 0 10px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+    .about, .bio, .skills, .services-body {
+        width: 100%;
+        padding: 40px;
+        min-height: 80%;
+    }
+
+    .home-page{
+        min-height: 80%;
+    }
+    
+    .success .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-body .text, .home-body .image {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .home-body {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .bio, .skills {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .bio .image, .skills .image, .services .image{
+        display: none;
+    }
+    
+    .bio .biography, .skills-paragraph {
+        width: 100%;
+    }
+    
+    .services-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .services-body .image {
+        margin-bottom: 30px;
+    }
+    
+    .services-body {
+        flex-direction: column;
+    }
+}
+
+.links.show{
+    right: 0;
 
 }
 
-.footer .end .social-media i{
-    padding: 0 10px;
+.links #close{
+    display: none;
+    color: white;
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+}
 
+/* Mobile navigation styles */
+@media screen and (max-width: 768px) {
+    .menu-bar {
+        display: block;
+    }
+    
+    .links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        z-index: 10;
+        background-color: #061E24;
+        width: min(25rem, 100%);
+        transition: right 300ms ease-in-out ;
+        text-align: center;
+        margin: auto;
+        display: flex;         
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .links #close{
+        display: block;
+        left: 89px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    
+
+    
+    .links ul{
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    
+    .links ul li{
+        padding: 20px;
+        cursor: pointer;
+    }
+
+
+    .links  ul i{
+        display: none;
+
+    }
+
+    .links ul li.hire{
+        background-color: inherit;
+    }
+
+
+    .bio .details {
+        grid-template-columns: 1fr;
+    }
+    
+    .success .images {
+        grid-template-columns: 1fr;
+    }
+    
+    .statistics {
+        gap: 20px;
+    }
+    
+    .about-paragraph {
+        flex-direction: column;
+    }
+    
+    .footer .end {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header {
+        padding: 15px 3%;
+    }
+
+    .links{
+        width: min(15rem, 100%);
+
+    }
+
+    .services-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .home-body, .about, .skills, .services-body {
+        padding: 15px 5%;
+    }
+    
+    .text p:first-child, .text .title {
+        font-size: 1.4rem;
+    }
+    
+    .biography h3, .skills .skills-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .buttons button {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .footer .main-footer span {
+        display: block;
+        margin: 10px 0;
+    }
 }
