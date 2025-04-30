@@ -562,11 +562,11 @@ i:nth-last-child(2) {
     .about, .bio, .skills, .services-body {
         width: 100%;
         padding: 40px;
-        min-height: 80%;
+        min-height: 85%;
     }
 
     .home-page{
-        min-height: 80%;
+        min-height: 85%;
     }
     
     .success .images {
@@ -623,7 +623,7 @@ i:nth-last-child(2) {
 }
 
 /* Mobile navigation styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .menu-bar {
         display: block;
     }
@@ -704,6 +704,14 @@ i:nth-last-child(2) {
 }
 
 @media screen and (max-width: 480px) {
+
+    .home-page .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
 
     .header {
         padding: 15px 3%;
