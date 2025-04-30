@@ -1,5 +1,8 @@
 # UI Portfolio – Group Assignment
 
+[ Live Demo] (https://christabel-akpene.github.io/UI-Portfolio/)  
+
+
 ## Project Overview
 
 This is a **group project** for the **Web Development track** under the **Power Learn Project (PLP)**. The assignment involves designing and building a **fully responsive portfolio website** based on a given UI design.
