@@ -156,6 +156,8 @@ i:nth-last-child(2) {
     background-color: #aeb0b1;
     height: 90%;
     width: 45%;
+    text-align: center;
+
 }
 
 .bio .biography {
